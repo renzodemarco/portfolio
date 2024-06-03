@@ -1,8 +1,7 @@
-import React from 'react'
-
+import colors from '../../utils/colors.js'
 const Header = () => {
   return (
-    <header style={{backgroundColor: '#c24'}}>Header</header>
+    <header style={{backgroundColor: colors.secondary.light}}>Header</header>
   )
 }
 

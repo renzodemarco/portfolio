@@ -1,8 +1,8 @@
-import React from 'react'
+import colors from '../../utils/colors.js'
 
 const Footer = () => {
   return (
-    <footer style={{backgroundColor: '#1d0'}}>Footer</footer>
+    <footer style={{backgroundColor: colors.primary.light}}>Footer</footer>
   )
 }
 
