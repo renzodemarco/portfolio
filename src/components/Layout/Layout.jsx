@@ -1,6 +1,6 @@
 
 import './Layout.css'
-import Navbar from '../Navbar/Navbar'
+import NavbarContainer from '../NavbarContainer/NavbarContainer'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Main from '../Main/Main'
@@ -9,7 +9,7 @@ function Layout() {
 
   return (
     <div className='layout'>
-      <Navbar />
+      <NavbarContainer />
       <div className='body'>
         <Header />
         <Main />

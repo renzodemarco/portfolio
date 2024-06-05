@@ -1,7 +1,10 @@
-import colors from '../../utils/colors.js'
+import './Header.css'
+
 const Header = () => {
   return (
-    <header style={{backgroundColor: colors.secondary.light}}>Header</header>
+    <header>
+      <h1 className='title'>ABOUT ME</h1>
+    </header>
   )
 }
 

@@ -1,9 +1,8 @@
-import colors from '../../utils/colors.js'
+import './Main.css'
 
 const Main = () => {
   return (
-    <main style={{backgroundColor: colors.background.light}}>
-      MAIN
+    <main>
     </main>
   )
 }

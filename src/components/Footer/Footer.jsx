@@ -1,8 +1,10 @@
-import colors from '../../utils/colors.js'
+import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer style={{backgroundColor: colors.primary.light}}>Footer</footer>
+    <footer>
+
+    </footer>
   )
 }
 
