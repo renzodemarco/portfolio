@@ -20,3 +20,9 @@
     "footer" 3rem
     / 1fr;
 }
+
+main {
+  background-color: #0f172a;
+  grid-area: main;
+}
+
