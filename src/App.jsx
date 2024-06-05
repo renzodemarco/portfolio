@@ -1,15 +1,11 @@
-import { useState } from "react";
 import Home from "./pages/Home";
 import AboutMe from './pages/AboutMe'
 import Layout from "./components/Layout/Layout"
+import { useSelector } from "react-redux";
 
 function App() {
 
-  const [activeComponent, setActiveComponent] = useState('Home');
-
-  const handleComponentChange = (name) => {
-    setActiveComponent(name);
-  };
+  const activeComponent = useSelector(state => state.activeComponent);
 
   const renderActiveComponent = () => {
     switch (activeComponent) {
@@ -17,13 +13,15 @@ function App() {
         return <Home />;
       case 'AboutMe':
         return <AboutMe />;
+      case 'Projects':
+        return <Projects />;
       default:
         return <Home />;
     }
   };
 
   return (
-    <Layout onChange={handleComponentChange}>
+    <Layout>
       {renderActiveComponent()}
     </Layout>
   )
