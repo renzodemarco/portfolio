@@ -5,14 +5,16 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Main from '../Main/Main'
 
-function Layout() {
+function Layout({ children }) {
 
   return (
     <div className='layout'>
-      <NavbarContainer />
+      <NavbarContainer  />
       <div className='body'>
         <Header />
-        <Main />
+        <Main>
+          {children}
+        </Main>
         <Footer />
       </div>
     </div>

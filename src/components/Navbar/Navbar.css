@@ -40,7 +40,13 @@ ul li {
 .nav-item:hover {
   cursor: pointer;
   color: rgb(247, 255, 212);
-  transform: rotate(-5deg);
-  transition: .4s;
+  transition: .3s;
+}
 
+.nav-item:nth-child(even):hover {
+  transform: rotate(-3deg);
+}
+
+.nav-item:nth-child(odd):hover {
+  transform: rotate(3deg);
 }
