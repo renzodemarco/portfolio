@@ -17,12 +17,14 @@
   grid:
     "header" 9rem
     "main" 1fr
-    "footer" 3rem
+    "footer" 2rem
     / 1fr;
 }
 
 main {
   background-color: #0f172a;
   grid-area: main;
+  padding: 2rem;
+  display: flex;
 }
 

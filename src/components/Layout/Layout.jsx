@@ -11,8 +11,6 @@ function Layout({ children }) {
   const activeComponent = useSelector(state => state.activeComponent);
   const title = getComponentTitle(activeComponent)
 
-  console.log(title[0])
-
   return (
     <div className='layout'>
       <NavbarContainer  />
