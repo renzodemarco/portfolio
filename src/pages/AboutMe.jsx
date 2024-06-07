@@ -17,6 +17,11 @@ const AboutMe = () => {
       </div>
       <div className='skills-container'>
         <h4>My skills:</h4>
+        <ul>
+          <li>
+            Javascript
+          </li>
+        </ul>
       </div>
     </div>
   )
