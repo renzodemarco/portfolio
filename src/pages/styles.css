@@ -5,7 +5,7 @@
   grid-template-areas:
   "presentation presentation"
   "intro skills";
-  grid-template-rows: 4rem 1fr;
+  grid-template-rows: 3.8rem 1fr;
   grid-template-columns: 60% 40%;
   gap: 1rem
 }
@@ -13,8 +13,9 @@
 .presentation-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   grid-area: presentation;
+  padding-bottom: 1.3rem;
 }
 
 .intro-container {
@@ -25,7 +26,7 @@
   background-color: rgba(255, 255, 255, .1);
 }
 
-.intro h4 {
+.about-me-container h4 {
   margin-bottom: .6rem;
 }
 
@@ -36,4 +37,31 @@
 
 .skills-container {
   grid-area: skills;
+  text-align: end;
+  background-color: rgba(255, 255, 255, .1);
+  padding: 1.6rem 2rem;
+}
+
+.skills-list {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-align: end;
+}
+
+.skills-title {
+  font-size: .7rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-bottom: .2rem;
+}
+
+.skills {
+  font-size: .8rem;
+}
+
+.skills:last-child {
+  margin-bottom: .6rem;
 }

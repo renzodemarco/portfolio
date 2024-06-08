@@ -16,10 +16,27 @@ const AboutMe = () => {
         </div>
       </div>
       <div className='skills-container'>
-        <h4>My skills:</h4>
-        <ul>
+        <h4>My skills</h4>
+        <ul className='skills-list'>
           <li>
-            Javascript
+            <p className='skills-title'>Frontend</p>
+            <p className='skills'>React.js | Javascript | HTML | CSS | Bootstrap | Tailwind</p>
+          </li>
+          <li>
+            <p className='skills-title'>Backend</p>
+            <p className='skills'>Node.js | Express.js</p>
+          </li>
+          <li>
+            <p className='skills-title'>Databases</p>
+            <p className='skills'>MySQL (Sequelize) | MongoDB (Mongoose)</p>
+          </li>
+          <li>
+            <p className='skills-title'>Mobile</p>
+            <p className='skills'>React Native</p>
+          </li>
+          <li>
+            <p className='skills-title'>Tools and Methodologies</p>
+            <p className='skills'>Git | Agile | Scrum</p>
           </li>
         </ul>
       </div>
