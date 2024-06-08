@@ -15,14 +15,14 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className='home-welcome'>
-      <h1>Welcome to my portfolio!</h1>
-      <h2>I'm <span>Renzo</span>, Full Stack Developer</h2>
-      <button onClick={handleButton} className='home-button'>Get to know me</button>
+        <h1>Welcome to my portfolio!</h1>
+        <h2>I'm <span>Renzo</span>, Full Stack Developer</h2>
+        <button onClick={handleButton} className='home-button'>Let's start working together</button>
+        <HomeContact />
       </div>
       <div className='home-img'>
         <img src={img} alt='Renzo Demarco' />
       </div>
-      <HomeContact />
     </div>
   )
 }

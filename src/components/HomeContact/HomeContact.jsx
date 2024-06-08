@@ -1,25 +1,30 @@
 import './HomeContact.css'
+import ButtonLink from '../ButtonLink/ButtonLink'
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { FaRegCopy } from "react-icons/fa";
 
 const HomeContact = () => {
 
-  const copyText = () => {
-    const textToCopy = "renzo11demarco@gmail.com";
-  }
-
   return (
     <div className='home-contact'>
-      <h3>Contacto</h3>
-      <ul>
-        <li>Email: renzo11demarco@gmail.com
-          <button onClick={this.copyText}>Copiar Texto</button>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/tu_perfil">LinkedIn</a>
-        </li>
-        <li><
-          a href="https://github.com/tu_usuario">GitHub</a>
-        </li>
-      </ul>
+      <h3>Contact me:</h3>
+      <div className='home-contact-list'>
+        <div className='home-contact-mail'>
+          renzo11demarco@gmail.com
+          <button className='copy-button'>
+            <CopyToClipboard text='renzo11demarco@gmail.com'>
+              <FaRegCopy className='copy-icon' />
+            </CopyToClipboard>
+          </button>
+        </div>
+        <div className='home-contact-cv'>
+          Download CV
+        </div>
+        <div className='home-contact-social'>
+          <ButtonLink name='linkedin' link='www.linkedin.com/in/renzo-demarco' />
+          <ButtonLink name='github' link='https://github.com/renzodemarco' />
+        </div>
+      </div>
     </div>
   )
 }
