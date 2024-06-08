@@ -15,7 +15,7 @@
   grid-area: body;
   display: grid;
   grid:
-    "header" 9rem
+    "header" 8.5rem
     "main" 1fr
     "footer" 2rem
     / 1fr;
