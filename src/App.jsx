@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import AboutMe from './pages/AboutMe'
 import Layout from "./components/Layout/Layout"
+import WorkExperience from "./pages/WorkExperience";
 import { useSelector } from "react-redux";
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
         return <Home />;
       case 'AboutMe':
         return <AboutMe />;
-      case 'Projects':
-        return <Projects />;
+      case 'WorkExperience':
+        return <WorkExperience />;
       default:
         return <Home />;
     }

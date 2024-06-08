@@ -15,10 +15,10 @@ const Navbar = () => {
       <ul className='nav-list'>
         <li className='nav-item' onClick={() => handleClick('Home')}>HOME</li>
         <li className='nav-item' onClick={() => handleClick('AboutMe')}>ABOUT ME</li>
-        <li className='nav-item'>EDUCATION</li>
-        <li className='nav-item'>WORK EXPERIENCE</li>
-        <li className='nav-item'>PROJECTS</li>
-        <li className='nav-item'>CONTACT</li>
+        <li className='nav-item' onClick={() => handleClick('Education')}>EDUCATION</li>
+        <li className='nav-item' onClick={() => handleClick('WorkExperience')}>WORK EXPERIENCE</li>
+        <li className='nav-item' onClick={() => handleClick('Projects')}>PROJECTS</li>
+        <li className='nav-item' onClick={() => handleClick('Contact')}>CONTACT</li>
       </ul>
     </nav>
   )
