@@ -1,4 +1,4 @@
-import './styles.css'
+import './AboutMe.css'
 
 const AboutMe = () => {
   return (
@@ -10,9 +10,9 @@ const AboutMe = () => {
       <div className='intro-container'>
         <div className='intro'>
           <h4>Get to know me</h4>
-          <p>I'm a creative and passionate developer dedicated to excellence and innovation in every project I undertake.</p>
-          <p>My diverse background in veterinary medicine, laboratory work, university teaching, and research equips me with a unique perspective to create cutting-edge solutions. This multifaceted experience enables me to approach problems creatively and deliver results that stand out.</p>
-          <p>In addition, my previous experience in team management and collaboration on interdisciplinary projects enables me to lead effectively and work collaboratively in team environments.</p>
+          <p>I'm a passionate developer dedicated to excellence and innovation in every project I undertake.</p>
+          <p>My diverse background in veterinary medicine, lab work, teaching, and research gives me a unique perspective to create innovative solutions. This enables me to tackle problems creatively and deliver standout results.</p>
+          <p>My experience in team management and interdisciplinary collaboration allows me to lead effectively and excel in team environments.</p>
         </div>
       </div>
       <div className='skills-container'>

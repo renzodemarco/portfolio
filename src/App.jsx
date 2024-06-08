@@ -1,7 +1,7 @@
-import Home from "./pages/Home";
-import AboutMe from './pages/AboutMe'
+import Home from "./pages/Home/Home";
+import AboutMe from './pages/AboutMe/AboutMe'
 import Layout from "./components/Layout/Layout"
-import WorkExperience from "./pages/WorkExperience";
+import WorkExperience from "./pages/WorkExperience/WorkExperience";
 import { useSelector } from "react-redux";
 
 function App() {
@@ -17,14 +17,17 @@ function App() {
       case 'WorkExperience':
         return <WorkExperience />;
       default:
-        return <Home />;
+        return <AboutMe />;
     }
   };
 
   return (
-    <Layout>
-      {renderActiveComponent()}
-    </Layout>
+    <>
+      {activeComponent === 'Home' ? <Home /> :
+        <Layout>
+          {renderActiveComponent()}
+        </Layout>}
+    </>
   )
 }
 
