@@ -1,7 +1,7 @@
 import './HomeContact.css'
 import ButtonLink from '../ButtonLink/ButtonLink'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import { FaRegCopy } from "react-icons/fa";
+import { TbCopy } from "react-icons/tb";
 
 const HomeContact = () => {
 
@@ -10,15 +10,15 @@ const HomeContact = () => {
       <h3>Contact me:</h3>
       <div className='home-contact-list'>
         <div className='home-contact-mail'>
-          renzo11demarco@gmail.com
-          <button className='copy-button'>
+          <p>renzo11demarco@gmail.com</p>
+          <button className='copy-button' onClick={() => alert('email copied')}>
             <CopyToClipboard text='renzo11demarco@gmail.com'>
-              <FaRegCopy className='copy-icon' />
+              <TbCopy className='copy-icon' />
             </CopyToClipboard>
           </button>
         </div>
         <div className='home-contact-cv'>
-          Download CV
+        <p>Download CV</p>
         </div>
         <div className='home-contact-social'>
           <ButtonLink name='linkedin' link='www.linkedin.com/in/renzo-demarco' />

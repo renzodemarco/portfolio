@@ -1,7 +1,7 @@
 .button-link {
   width: 3rem;
   height: 3rem;
-  background-color: #fff;
+  background-color: #0f172a;
   border: none;
 }
 
@@ -15,5 +15,5 @@
 .button-link-img {
   width: 80%;
   height: 80%;
-  color: #0f172a
+  color: #fff
 }

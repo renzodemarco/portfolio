@@ -16,13 +16,32 @@
   margin-bottom: .8rem;
 }
 
+.home-contact-mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: .2rem;
+}
+
 .copy-button {
   background-color: transparent;
+  width: 1.8rem;
+  height: 1.8rem;
   border: none;
+  display: grid;
+  place-items: center;
+  padding: .2rem;
+}
+
+.copy-button:hover {
+  cursor: pointer;
 }
 
 .copy-icon {
   color: #fff;
+  height: 90%;
+  width: 90%;
 }
 
 .home-contact-social {
