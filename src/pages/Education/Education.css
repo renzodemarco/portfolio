@@ -1,3 +1,40 @@
 .education-container {
   color: #fff;
+  display: grid;
+  grid:
+    "coder courses"
+    "vet lang";
+  grid-template-columns: 50% 50%;
+}
+
+.education-div {
+  padding: 1.6rem 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.education-div h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.education-div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.4rem;
+  padding-top: 0.8rem;
+}
+
+.education-div li {
+  font-size: 1rem;
+  list-style-type: disc;
+}
+
+.education-div li span {
+  font-weight: 700;
+}
+
+.education-div li p {
+  font-size: .8rem;
 }
