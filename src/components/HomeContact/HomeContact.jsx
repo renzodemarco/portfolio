@@ -21,7 +21,7 @@ const HomeContact = () => {
         <p>Download CV</p>
         </div>
         <div className='home-contact-social'>
-          <ButtonLink name='linkedin' link='www.linkedin.com/in/renzo-demarco' />
+          <ButtonLink name='linkedin' link='https://linkedin.com/in/renzo-demarco' />
           <ButtonLink name='github' link='https://github.com/renzodemarco' />
         </div>
       </div>
