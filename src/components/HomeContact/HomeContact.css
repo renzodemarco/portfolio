@@ -27,24 +27,46 @@
   color: #0f172a;
 }
 
-.copy-button {
+.copy-button-container {
   background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: .4rem;
   border: none;
   padding: 0.2rem;
 }
 
-.copy-button:hover {
+.copy-button-container:hover {
   cursor: pointer;
+}
+
+.copy-button-container::after {
+  content: 'Click to copy';
+  position: absolute;
+  transform: translate(-50%, 50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: .4rem .7rem;
+  border-radius: .4rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.copy-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .4rem;
+  width: 100%;
+  height: 100%;
+}
+
+.copy-button-container:hover::after {
+  opacity: 1;
 }
 
 .copy-icon {
   color: #0f172a;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
 }
 
 .home-contact-social {

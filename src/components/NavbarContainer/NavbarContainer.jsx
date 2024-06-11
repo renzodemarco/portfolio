@@ -5,7 +5,9 @@ import Navbar from '../Navbar/Navbar'
 const NavbarContainer = () => {
   return (
     <div className='navbar-container'>
-      <img src={img} alt='Renzo Demarco' className='navbar-profile-img' />
+      <div className='img-container'>
+        <img src={img} alt='Renzo Demarco' className='navbar-profile-img' />
+      </div>
       <Navbar />
     </div>
   )

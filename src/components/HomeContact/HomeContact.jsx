@@ -10,10 +10,12 @@ const HomeContact = () => {
       <h3>Contact me:</h3>
       <div className='home-contact-list'>
         <div className='home-contact-mail'>
-          <button className='copy-button' onClick={() => alert('email copied')}>
-            <p>renzo11demarco@gmail.com</p>
+          <button className='copy-button-container' onClick={() => alert('email copied')}>
             <CopyToClipboard text='renzo11demarco@gmail.com'>
-              <TbCopy className='copy-icon' />
+              <div className='copy-button'>
+                <p>renzo11demarco@gmail.com</p>
+                <TbCopy className='copy-icon' />
+              </div>
             </CopyToClipboard>
           </button>
         </div>

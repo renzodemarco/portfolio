@@ -35,6 +35,21 @@
   font-size: 3.5rem;
 }
 
+.img-container {
+  display: flex;
+  position: relative;
+}
+
+.img-container::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
 .home-button {
   margin: 3rem 0 2rem;
   padding: .8rem 2.6rem;

@@ -20,8 +20,8 @@ const Home = () => {
         <button onClick={handleButton} className='home-button'>Let's start working together</button>
         <HomeContact />
       </div>
-      <div className='home-img'>
-        <img src={img} alt='Renzo Demarco' />
+      <div className='home-img img-container'>
+        <img src={img} alt='Renzo Demarco'/>
       </div>
     </div>
   )
