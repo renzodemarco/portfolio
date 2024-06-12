@@ -50,3 +50,7 @@ ul li {
 .nav-item:nth-child(odd):hover {
   transform: rotate(3deg);
 }
+
+.nav-item-active {
+  font-weight: 700;
+}

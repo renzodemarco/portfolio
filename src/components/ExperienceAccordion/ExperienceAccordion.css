@@ -1,0 +1,26 @@
+.accordion-header {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-content {
+  padding: 0 1rem 1rem 1rem
+}
+
+.responsabilities {
+  color: #fff;
+}
+
+.responsabilities li {
+  list-style-type: disc;
+}

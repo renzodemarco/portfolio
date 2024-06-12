@@ -1,7 +1,6 @@
-.experience-list {
-  color: #fff;
-}
-
-.experience-list li {
-  list-style-type: disc;
+.work-experience-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
