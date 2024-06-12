@@ -2,6 +2,7 @@ import './HomeContact.css'
 import ButtonLink from '../ButtonLink/ButtonLink'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { TbCopy } from "react-icons/tb";
+import DownloadCvButton from '../DownloadCvButton/DownloadCvButton';
 
 const HomeContact = () => {
 
@@ -20,7 +21,7 @@ const HomeContact = () => {
           </button>
         </div>
         <div className='home-contact-cv'>
-          <p>Download CV</p>
+          <DownloadCvButton/>
         </div>
         <div className='home-contact-social'>
           <ButtonLink name='linkedin' link='https://linkedin.com/in/renzo-demarco' />
