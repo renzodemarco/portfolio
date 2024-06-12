@@ -19,13 +19,17 @@
 
 .home-contact-button {
   gap: 0.2rem;
-  padding: .4rem 1rem;
-  background-color: #fff;
+  padding: .4rem 1.2rem;
+  border: 1px groove rgba(255, 255, 255, 0.2);
   border-radius: 1rem;
 }
 
+.home-contact-button:hover {
+  border: 1px groove rgba(255, 255, 255, 0.6);
+}
+
 .home-contact-button p {
-  color: #0f172a;
+  color: #fff;
   font-size: 1rem;
 }
 

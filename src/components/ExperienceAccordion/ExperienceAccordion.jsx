@@ -21,12 +21,12 @@ const ExperienceAccordion = ({ category, jobs, index }) => {
         onClick={() => toggleItem(index)}
       >
         <p>{category}</p>
-        <RiArrowDropDownLine />
+        <RiArrowDropDownLine className='dropdown-icon'/>
       </div>
       {index === expandedIndex && (
         <div className="accordion-content">
           {jobs.map((job, idx) => (
-            <div key={idx} className="company-div">
+            <div key={idx} className="company">
               <h4>{job.company}</h4>
               <p>{job.date}</p>
               <ul className='responsabilities'>

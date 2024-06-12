@@ -24,7 +24,7 @@ export const experiences = {
   ],
   "Veterinarian": [
     {
-      company: "Veterinaria La Granja",
+      company: "La Granja Veterinary Hospital",
       date: "September 2020 - Present",
       responsibilities: [
         "Responsible for supervising the hospitalization area, leading a team of veterinary assistants, and designing/implementing diagnostic and treatment plans.",
@@ -32,7 +32,7 @@ export const experiences = {
       ]
     },
     {
-      company: "Laboratorio Microdiag",
+      company: "Microdiag Laboratory",
       date: "February 2021 - February 2023",
       responsibilities: [
         "Hematological tests, blood biochemistry, and urinalysis.",
@@ -44,7 +44,7 @@ export const experiences = {
   ],
   "University Lecturer and Researcher": [
     {
-      company: "Laboratorio de Patología Especial, Facultad de Ciencias Veterinarias, UNLP",
+      company: "Pathology Laboratory, Faculty of Veterinary Sciences, National University of La Plata",
       date: "February 2017 - March 2020",
       responsibilities: [
         "Teaching Veterinary Pathology courses, supervising students, and contributing to interdisciplinary teaching and research groups.",
