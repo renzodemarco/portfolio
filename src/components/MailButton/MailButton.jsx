@@ -4,14 +4,14 @@ import './MailButton.css'
 
 const MailButton = () => {
   return (
-    <button className='copy-button-container' onClick={() => alert('email copied')}>
-      <CopyToClipboard text='renzo11demarco@gmail.com'>
+    <CopyToClipboard text='renzo11demarco@gmail.com' onCopy={() => alert('Email copied')}>
+      <button className='copy-button-container'>
         <div className='copy-button'>
           <p>renzo11demarco@gmail.com</p>
           <TbCopy className='copy-icon' />
         </div>
-      </CopyToClipboard>
-    </button>
+      </button>
+    </CopyToClipboard>
   )
 }
 
