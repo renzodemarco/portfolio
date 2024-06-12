@@ -3,6 +3,8 @@ import AboutMe from './pages/AboutMe/AboutMe'
 import Layout from "./components/Layout/Layout"
 import WorkExperience from "./pages/WorkExperience/WorkExperience";
 import Education from './pages/Education/Education'
+import Projects from './pages/Projects/Projects'
+import Contact from "./pages/Contact/Contact";
 import { useSelector } from "react-redux";
 
 function App() {
@@ -15,10 +17,14 @@ function App() {
         return <Home />;
       case 'AboutMe':
         return <AboutMe />;
+      case 'Education':
+        return <Education />;
       case 'WorkExperience':
         return <WorkExperience />;
-        case 'Education':
-          return <Education />;
+      case 'Projects':
+        return <Projects />;
+      case 'Contact':
+        return <Contact />;
       default:
         return <AboutMe />;
     }

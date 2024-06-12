@@ -1,12 +1,26 @@
+import { experiences } from '../../data/data'
 import './WorkExperience.css'
 
 const WorkExperience = () => {
+
   return (
     <div className='work-experience-container'>
-      <div className="presentation-container">
-        <h2>Hi! I'm <span>Renzo Demarco</span>, </h2>
-        <h3> your next Full Stack Developer</h3>
-      </div>
+{Object.entries(experiences).map(([category, jobs], index) => (
+        <div key={index} className="role-name">
+          <h3>{category}</h3>
+          {jobs.map((job, idx) => (
+            <div key={idx} className="experience-div">
+              <h4>{job.company}</h4>
+              <p>{job.date}</p>
+              <ul className='experience-list'>
+                {job.responsibilities.map((responsibility, id) => (
+                  <li key={id}>{responsibility}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   )
 }
