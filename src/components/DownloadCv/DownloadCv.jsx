@@ -1,6 +1,7 @@
-import React from 'react';
+import './DownloadCv.css'
+import { FiDownload } from "react-icons/fi";
 
-const DownloadCvButton = () => {
+const DownloadCv = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -10,10 +11,11 @@ const DownloadCvButton = () => {
   };
 
   return (
-    <button onClick={handleDownload}>
-      Download CV
+    <button onClick={handleDownload} className='cv-button'>
+      <p>Download CV</p>
+      <FiDownload className='cv-icon' />
     </button>
   );
 };
 
-export default DownloadCvButton;
+export default DownloadCv;

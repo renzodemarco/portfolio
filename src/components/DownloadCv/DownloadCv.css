@@ -1,0 +1,21 @@
+.cv-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0.4rem;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.cv-button:hover {
+  cursor: pointer;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.cv-icon {
+  color: #0f172a;
+  font-size: 1.1rem;
+}
