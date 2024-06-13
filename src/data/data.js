@@ -63,14 +63,25 @@ export const projects = [
     technologies: [
       "React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "Bootstrap"
     ],
-    imgSrc: "https://i.imgur.com/r1XQANP.png"
+    imgSrc: "https://i.imgur.com/r1XQANP.png",
+    url: "https://myvethub.onrender.com/"
   },
   {
     title: "CDCommerce",
-    description: "This mobile app provides a seamless e-commerce experience for record enthusiasts. Users can browse and purchase records, add them to a shopping cart, and remove items as needed. The app features a user profile section where users can upload a photo and add their location, making the shopping experience personalized and convenient.",
+    description: "This mobile app offers a streamlined e-commerce experience for record enthusiasts. Users can browse, purchase, and manage items in their cart. It includes a user profile with photo upload and location settings, enhancing personalization and convenience during shopping.",
     technologies: [
-      "React Native", "Redux", "SQLite"
+      "React Native", "Expo", "Redux", "Firefox Auth", "SQLite"
     ],
-    imgSrc: "https://imgur.com/ZO0WYer.png"
+    imgSrc: "https://imgur.com/ZO0WYer.png",
+    url: "https://cdcommerce-app.netlify.app/"
   },
+  {
+    title: "Diagnovet Lab",
+    description: "This mobile app offers a streamlined e-commerce experience for record enthusiasts. Users can browse, purchase, and manage items in their cart. It includes a user profile with photo upload and location settings, enhancing personalization and convenience during shopping.",
+    technologies: [
+      "HTML", "CSS", "Javascript", "Bootstrap"
+    ],
+    imgSrc: "https://i.imgur.com/3i4PmFX.png",
+    url: "https://laboratoriodiagnovet.netlify.app/"
+  }
 ]

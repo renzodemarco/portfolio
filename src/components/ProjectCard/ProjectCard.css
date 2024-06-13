@@ -7,8 +7,67 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.project-img-container {
+  position: relative;
+}
+
 .project-image {
   width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-text-container {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: .7rem 1rem ;
+  box-sizing: border-box
+}
+
+.overlay-img-text {
+  color: white;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.overlay-link-container {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 1rem;
+  opacity: 0;
+}
+
+.project-img-container:hover .overlay-link-container {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.project-img-container:hover .project-image {
+  filter: brightness(.8);
+  transition: filter 0.3s ease;
+}
+
+.overlay-link {
+  text-decoration: none;
+  padding: .5rem .9rem;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: .6rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: .9rem;
+} 
+
+.overlay-link:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.2s ease;
 }
 
 .project-info-container {
@@ -19,19 +78,16 @@
   gap: .8rem;
 }
 
-.project-title {
-  font-size: 1.2rem;
-}
-
 .project-description {
-  font-size: .9rem;
+  font-size: .85rem;
   font-weight: 200;
-  opacity: .8;
+  padding: .5rem 0;
+  opacity: .9;
 }
 
 .project-technologies {
   font-size: .9rem;
-  justify-self: flex-end;
+  font-weight: 200;
 }
 
 .project-technologies span {
