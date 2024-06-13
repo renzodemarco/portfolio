@@ -1,0 +1,9 @@
+.contact-container {
+  width: 100%;
+}
+
+.contact-container h2 {
+  white-space: wrap;
+  width: 100%;
+  text-align: center;
+}

@@ -1,3 +1,4 @@
+import { IoOpenOutline } from "react-icons/io5";
 import './ProjectCard.css'
 
 const ProjectCard = ({ data }) => {
@@ -10,7 +11,8 @@ const ProjectCard = ({ data }) => {
         <img src={imgSrc} alt={`${title} screenshot`} className="project-image" />
         <div className="overlay-link-container">
           <a href={url} target="_blank" rel="noopener noreferrer" className="overlay-link">
-            Visit website
+            <p>Visit website</p>
+            <IoOpenOutline color="#fff" />
           </a>
         </div>
         <div className="overlay-text-container">

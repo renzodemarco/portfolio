@@ -13,9 +13,9 @@
 .copy-button-container::after {
   content: 'Click to copy';
   position: absolute;
-  transform: translate(140%, -80%);
-  background: rgba(0, 0, 0, 0.2);
-  color: rgba(255, 255, 255, 0.6);
+  transform: translate(150%, -80%);
+  background: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.8);
   padding: .4rem .7rem;
   border-radius: .4rem;
   opacity: 0;
