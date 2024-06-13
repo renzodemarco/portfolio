@@ -1,7 +1,7 @@
 .cv-button {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   gap: 0.4rem;
   width: 100%;
   height: 100%;

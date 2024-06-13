@@ -55,3 +55,22 @@ export const experiences = {
     }
   ]
 };
+
+export const projects = [
+  {
+    title: "MyVetHub",
+    description: "This single web application streamlines veterinary clinic management by allowing users to create, modify, and delete patient records, including detailed characteristics and medical history. It supports easy updating of clinical histories and offers advanced filters for efficient patient searches.",
+    technologies: [
+      "React.js", "Node.js", "Express.js", "MongoDB", "Mongoose", "Bootstrap"
+    ],
+    imgSrc: "https://i.imgur.com/r1XQANP.png"
+  },
+  {
+    title: "CDCommerce",
+    description: "This mobile app provides a seamless e-commerce experience for record enthusiasts. Users can browse and purchase records, add them to a shopping cart, and remove items as needed. The app features a user profile section where users can upload a photo and add their location, making the shopping experience personalized and convenient.",
+    technologies: [
+      "React Native", "Redux", "SQLite"
+    ],
+    imgSrc: "https://imgur.com/ZO0WYer.png"
+  },
+]
