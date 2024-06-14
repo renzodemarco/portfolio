@@ -7,7 +7,7 @@
 .copy-button-container:hover {
   cursor: pointer;
   font-weight: 500;
-  transition: .3s;
+  transition: .3s ease;
 }
 
 .copy-button-container::after {
@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: .4rem;
   width: 100%;
   height: 100%;

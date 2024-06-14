@@ -64,5 +64,5 @@
   color: #fff;
   background-color: #97a7ca;
   cursor: pointer;
-  transition: .2s;
+  transition: .2s ease;
 }

@@ -20,5 +20,6 @@
 
 .button-link:hover {
   transform: scale(1.05);
-  transition: .3s;
+  filter: brightness(1.1);
+  transition: .3s ease;
 }
