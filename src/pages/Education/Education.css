@@ -28,7 +28,7 @@
 }
 
 .education-div li {
-  font-size: 1rem;
+  font-size: .95rem;
   list-style-type: disc;
 }
 
@@ -37,5 +37,12 @@
 }
 
 .education-div li p {
-  font-size: .8rem;
+  padding-top: .2rem;
+  font-size: .75rem;
+}
+
+.education-div:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.075);
+  transition: .3s ease;
 }
