@@ -1,22 +1,24 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { setActiveComponent } from '../../redux/actions';
+import { Link, Events, scrollSpy } from 'react-scroll';
 import './Navbar.css'
+import { useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ navItems }) => {
 
   const dispatch = useDispatch();
   const activeComponent = useSelector(state => state.activeComponent)
-  const navItems = [
-    { name: 'Home', label: 'WELCOME!' },
-    { name: 'AboutMe', label: 'ABOUT ME' },
-    { name: 'Education', label: 'EDUCATION' },
-    { name: 'WorkExperience', label: 'WORK EXPERIENCE' },
-    { name: 'Projects', label: 'PROJECTS' },
-    { name: 'Contact', label: 'CONTACT' }
-  ];
 
-  const handleClick = (component) => {
-    dispatch(setActiveComponent(component));
+  useEffect(() => {
+    Events.scrollEvent.register('end', handleSetActive);
+    scrollSpy.update();
+
+    return () => {
+      Events.scrollEvent.remove('end', handleSetActive);
+    };
+  }, []);
+
+  const handleSetActive = (to) => {
+    dispatch({ type: 'SET_ACTIVE_COMPONENT', payload: to });
   };
 
   return (
@@ -26,9 +28,8 @@ const Navbar = () => {
           <li
             key={index}
             className={`nav-item ${activeComponent === item.name ? 'nav-item-active' : ''}`}
-            onClick={() => handleClick(item.name)}
           >
-            {item.label}
+            <Link to={item.name} spy={true} smooth={true} duration={500} onSetActive={handleSetActive}>{item.label}</Link>
           </li>
         ))}
       </ul>

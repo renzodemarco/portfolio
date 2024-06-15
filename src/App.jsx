@@ -1,40 +1,43 @@
 import Home from "./pages/Home/Home";
-import AboutMe from './pages/AboutMe/AboutMe'
 import Layout from "./components/Layout/Layout"
-import WorkExperience from "./pages/WorkExperience/WorkExperience";
+import AboutMe from './pages/AboutMe/AboutMe'
 import Education from './pages/Education/Education'
+import WorkExperience from './pages/WorkExperience/WorkExperience'
 import Projects from './pages/Projects/Projects'
-import Contact from "./pages/Contact/Contact";
+import Contact from './pages/Contact/Contact'
 import { useSelector } from "react-redux";
+import { Element, scroller } from 'react-scroll';
+import { useEffect } from "react";
 
 function App() {
 
   const activeComponent = useSelector(state => state.activeComponent);
 
-  const renderActiveComponent = () => {
-    switch (activeComponent) {
-      case 'Home':
-        return <Home />;
-      case 'AboutMe':
-        return <AboutMe />;
-      case 'Education':
-        return <Education />;
-      case 'WorkExperience':
-        return <WorkExperience />;
-      case 'Projects':
-        return <Projects />;
-      case 'Contact':
-        return <Contact />;
-      default:
-        return <AboutMe />;
-    }
+  const scrollToSection = (section) => {
+    scroller.scrollTo(section, {
+      vertical: true,
+      duration: 500,
+      delay: 0,
+      containerId: 'scroll-container',
+      smooth: 'ease'
+    });
   };
+
+  useEffect(() => {
+    if (activeComponent) {
+      scrollToSection(activeComponent);
+    }
+  }, [activeComponent]);
 
   return (
     <>
       {activeComponent === 'Home' ? <Home /> :
         <Layout>
-          {renderActiveComponent()}
+          <Element name="AboutMe"><AboutMe /></Element>
+          <Element name="Education"><Education /></Element>
+          <Element name="WorkExperience"><WorkExperience /></Element>
+          <Element name="Projects"><Projects /></Element>
+          <Element name="Contact"><Contact /></Element>
         </Layout>}
     </>
   )

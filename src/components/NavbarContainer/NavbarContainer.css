@@ -1,7 +1,10 @@
 .navbar-container {
   display: flex;
+  height: 100vh;
+  width: 20vw;
   flex-direction: column;
   grid-area: navbar;
+  position: fixed;
   background-color: #1d2a47;
 }
 

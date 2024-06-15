@@ -9,14 +9,13 @@ import getComponentTitle from '../../utils/getComponentTitle'
 function Layout({ children }) {
 
   const activeComponent = useSelector(state => state.activeComponent);
-  const title = getComponentTitle(activeComponent)
 
   return (
     <div className='layout'>
-      <NavbarContainer  />
+      <NavbarContainer />
       <div className='body'>
-        <Header title={title} />
-        <main>
+        <Header title={'choto'} />
+        <main id='scroll-container'>
           {children}
         </main>
         <Footer />
