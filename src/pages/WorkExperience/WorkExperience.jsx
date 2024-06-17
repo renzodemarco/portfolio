@@ -18,16 +18,18 @@ const WorkExperience = () => {
   return (
     <div className='work-experience-container'>
       <h2>Tap to explore my achievements and roles:</h2>
-      {Object.entries(experiences).map(([category, jobs], index) => (
-        <ExperienceAccordion
-          key={index}
-          category={category}
-          jobs={jobs}
-          index={index}
-          onToggle={toggleItem}
-          expandedIndex={expandedIndex}
-        />
-      ))}
+      <div className='accordion-container'>
+        {Object.entries(experiences).map(([category, jobs], index) => (
+          <ExperienceAccordion
+            key={index}
+            category={category}
+            jobs={jobs}
+            index={index}
+            onToggle={toggleItem}
+            expandedIndex={expandedIndex}
+          />
+        ))}
+      </div>
     </div>
   )
 }

@@ -7,23 +7,26 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: 1.2rem;
+  background-color: #0a0f1b;
+}
+
+.accordion-header:hover {
+  font-weight: 600;
+  transition: .2s ease;
 }
 
 .dropdown-icon {
   font-size: 1.5rem;
 }
 
-.accordion-item {
-  border-bottom: 1px solid #ccc;
-}
-
 .accordion-content {
-  padding: .4rem 1rem 1rem 1rem;
+  padding: 1.3rem 1.6rem 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: .8rem;
+  background-color: rgba(255, 255, 255, .04)
 }
 
 .company h4 {
@@ -39,6 +42,7 @@
 .responsabilities {
   color: #fff;
   opacity: .9;
+  margin-left: 1rem;
 }
 
 .responsabilities li {
