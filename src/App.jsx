@@ -5,34 +5,21 @@ import Education from './pages/Education/Education'
 import WorkExperience from './pages/WorkExperience/WorkExperience'
 import Projects from './pages/Projects/Projects'
 import Contact from './pages/Contact/Contact'
-import { useSelector } from "react-redux";
-import { Element, scroller } from 'react-scroll';
-import { useEffect } from "react";
+import { Element } from 'react-scroll';
+import { useState } from "react";
 
 function App() {
 
-  const activeComponent = useSelector(state => state.activeComponent);
+  const [isHome, setIsHome] = useState(false)
 
-  const scrollToSection = (section) => {
-    scroller.scrollTo(section, {
-      vertical: true,
-      duration: 500,
-      delay: 0,
-      containerId: 'scroll-container',
-      smooth: 'ease'
-    });
-  };
-
-  useEffect(() => {
-    if (activeComponent) {
-      scrollToSection(activeComponent);
-    }
-  }, [activeComponent]);
+  const toggleIsHome = () => {
+    setIsHome(!isHome)
+  } 
 
   return (
     <>
-      {activeComponent === 'Home' ? <Home /> :
-        <Layout>
+      {isHome == true ? <Home toggleIsHome={toggleIsHome} /> :
+        <Layout toggleIsHome={toggleIsHome}>
           <Element name="AboutMe"><AboutMe /></Element>
           <Element name="Education"><Education /></Element>
           <Element name="WorkExperience"><WorkExperience /></Element>

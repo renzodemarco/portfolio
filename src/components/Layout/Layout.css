@@ -7,8 +7,6 @@
 
 .body {
   grid-area: body;
-  display: flex;
-  flex-direction: column;
 }
 
 main {
@@ -16,15 +14,5 @@ main {
   padding: 10rem 2rem 2rem;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
-  gap: 800px;
+  gap: 7rem;
 } 
-
-main::-webkit-scrollbar {
-  width: 6px;
-}
-
-main::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, .8);
-  border-radius: 6px;
-}

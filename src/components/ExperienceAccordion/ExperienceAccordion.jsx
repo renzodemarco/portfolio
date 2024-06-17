@@ -1,27 +1,16 @@
-import { useState } from 'react';
 import { RiArrowDropDownLine } from "react-icons/ri";
 import './ExperienceAccordion.css'
 
-const ExperienceAccordion = ({ category, jobs, index }) => {
-
-  const [expandedIndex, setExpandedIndex] = useState('0');
-
-  const toggleItem = (index) => {
-    if (expandedIndex === index) {
-      setExpandedIndex(null);
-    } else {
-      setExpandedIndex(index);
-    }
-  };
-
+const ExperienceAccordion = ({ category, jobs, index, expandedIndex, onToggle }) => {
+  
   return (
     <div className="accordion-item">
       <div
         className={`accordion-header ${index === expandedIndex ? 'active' : ''}`}
-        onClick={() => toggleItem(index)}
+        onClick={() => onToggle(index)}
       >
         <p>{category}</p>
-        <RiArrowDropDownLine className='dropdown-icon'/>
+        <RiArrowDropDownLine className='dropdown-icon' />
       </div>
       {index === expandedIndex && (
         <div className="accordion-content">

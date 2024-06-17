@@ -1,35 +1,27 @@
-import { useDispatch, useSelector } from 'react-redux';
-import { Link, Events, scrollSpy } from 'react-scroll';
+import { Link } from 'react-scroll';
 import './Navbar.css'
-import { useEffect } from 'react';
 
-const Navbar = ({ navItems }) => {
-
-  const dispatch = useDispatch();
-  const activeComponent = useSelector(state => state.activeComponent)
-
-  useEffect(() => {
-    Events.scrollEvent.register('end', handleSetActive);
-    scrollSpy.update();
-
-    return () => {
-      Events.scrollEvent.remove('end', handleSetActive);
-    };
-  }, []);
-
-  const handleSetActive = (to) => {
-    dispatch({ type: 'SET_ACTIVE_COMPONENT', payload: to });
-  };
+const Navbar = ({ navItems, toggleIsHome }) => {
 
   return (
     <nav className='navbar'>
       <ul className='nav-list'>
+        <li className='nav-item' onClick={toggleIsHome}>
+          WELCOME!
+        </li>
         {navItems.map((item, index) => (
           <li
             key={index}
-            className={`nav-item ${activeComponent === item.name ? 'nav-item-active' : ''}`}
+            className='nav-item'
           >
-            <Link to={item.name} spy={true} smooth={true} duration={500} onSetActive={handleSetActive}>{item.label}</Link>
+            <Link
+              to={item.name}
+              spy={true}
+              offset={-160}
+              smooth={true}
+              duration={500}
+              activeClass="active" 
+            >{item.label}</Link>
           </li>
         ))}
       </ul>
