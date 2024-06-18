@@ -39,18 +39,14 @@ ul li {
 
 .nav-item:hover {
   cursor: pointer;
-  color: rgb(247, 255, 212);
-  transition: .3s;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, .8);
+  transition: .2s ease;
 }
 
-.nav-item:nth-child(even):hover {
-  transform: rotate(-3deg);
-}
-
-.nav-item:nth-child(odd):hover {
-  transform: rotate(3deg);
-}
-
-.nav-item-active {
-  font-weight: 700;
+.nav-item .active {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, .8);
+  transition: .2s ease;
 }

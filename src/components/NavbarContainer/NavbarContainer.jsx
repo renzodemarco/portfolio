@@ -2,10 +2,9 @@ import './NavbarContainer.css'
 import img from '../../assets/profile.webp'
 import Navbar from '../Navbar/Navbar'
 
-const NavbarContainer = () => {
+const NavbarContainer = ({ toggleIsHome }) => {
 
   const navItems = [
-    { name: 'Home', label: 'WELCOME!' },
     { name: 'AboutMe', label: 'ABOUT ME' },
     { name: 'Education', label: 'EDUCATION' },
     { name: 'WorkExperience', label: 'WORK EXPERIENCE' },
@@ -18,7 +17,7 @@ const NavbarContainer = () => {
       <div className='img-container'>
         <img src={img} alt='Renzo Demarco' className='navbar-profile-img' />
       </div>
-      <Navbar navItems={navItems}/>
+      <Navbar navItems={navItems} toggleIsHome={toggleIsHome}/>
     </div>
   )
 }
