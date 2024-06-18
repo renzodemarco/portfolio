@@ -1,3 +1,11 @@
+export const navItems = [
+  { name: 'AboutMe', label: 'ABOUT ME' },
+  { name: 'Education', label: 'EDUCATION' },
+  { name: 'WorkExperience', label: 'WORK EXPERIENCE' },
+  { name: 'Projects', label: 'PROJECTS' },
+  { name: 'Contact', label: 'CONTACT' }
+]
+
 export const experiences = {
   "Web Developer": [
     {

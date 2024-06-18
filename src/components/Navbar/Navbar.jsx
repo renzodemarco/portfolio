@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll';
 import './Navbar.css'
 
-const Navbar = ({ navItems, toggleIsHome }) => {
+const Navbar = ({ navItems, toggleIsHome, onSetActive }) => {
 
   return (
     <nav className='navbar'>
@@ -20,7 +20,8 @@ const Navbar = ({ navItems, toggleIsHome }) => {
               offset={-160}
               smooth={true}
               duration={500}
-              activeClass="active" 
+              activeClass="active"
+              onSetActive={() => onSetActive(item.label)}
             >{item.label}</Link>
           </li>
         ))}

@@ -10,16 +10,16 @@ import { useState } from "react";
 
 function App() {
 
-  const [isHome, setIsHome] = useState(false)
+  const [isHome, setIsHome] = useState(false);
 
   const toggleIsHome = () => {
     setIsHome(!isHome)
-  } 
+  }
 
   return (
     <>
       {isHome == true ? <Home toggleIsHome={toggleIsHome} /> :
-        <Layout toggleIsHome={toggleIsHome}>
+        <Layout toggleIsHome={toggleIsHome} >
           <Element name="AboutMe"><AboutMe /></Element>
           <Element name="Education"><Education /></Element>
           <Element name="WorkExperience"><WorkExperience /></Element>

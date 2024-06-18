@@ -7,7 +7,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 header::after {
