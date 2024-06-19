@@ -6,7 +6,7 @@
   display: grid;
   grid:
     "welcome img";
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 56% 44%;
   grid-template-rows: 100vh;
 }
 
@@ -65,10 +65,4 @@
   background-color: #97a7ca;
   cursor: pointer;
   transition: .2s ease;
-}
-
-@media (min-width: 1400px) {
-  .home-container {
-    grid-template-columns: 57% 43%;
-  }
 }
