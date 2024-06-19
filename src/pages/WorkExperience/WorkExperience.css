@@ -2,12 +2,13 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 3rem
 }
 
 .work-experience-container h2 {
   font-size: 1.8rem;
   text-align: center;
-  margin: .2rem 0 3rem;
+  margin-top: .2rem;
   font-weight: 600;
 }
 
@@ -15,4 +16,11 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.cv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
 }

@@ -37,10 +37,6 @@
   list-style-type: none;
 }
 
-.education-lang li {
-  list-style-type: none;
-}
-
 .education-div li span {
   font-weight: 600;
   font-size: 1rem;
@@ -50,6 +46,7 @@
 .education-div li p {
   padding-top: .2rem;
   font-size: .75rem;
+  opacity: .6;
 }
 
 .education-div:hover {

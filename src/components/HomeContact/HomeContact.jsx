@@ -12,7 +12,7 @@ const HomeContact = () => {
         <div className='home-contact-button'>
           <MailButton />
         </div>
-        <div className='home-contact-button'>
+        <div className='home-contact-button cv-button-container'>
           <DownloadCv/>
         </div>
         <div className='home-contact-social'>

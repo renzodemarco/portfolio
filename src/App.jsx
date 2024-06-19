@@ -10,7 +10,7 @@ import { useState } from "react";
 
 function App() {
 
-  const [isHome, setIsHome] = useState(false);
+  const [isHome, setIsHome] = useState(true);
 
   const toggleIsHome = () => {
     setIsHome(!isHome)
