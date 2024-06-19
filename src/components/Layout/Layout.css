@@ -19,9 +19,6 @@ main {
 
 @media (max-width: 978px) {
   .layout {
-    overflow: hidden;
-    display: grid;
-    grid: "navbar body";
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 195px 1fr;
   }
 }

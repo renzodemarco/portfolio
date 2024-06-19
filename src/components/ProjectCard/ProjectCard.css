@@ -101,7 +101,18 @@
 @media (max-width: 978px) {
   .project-card {
     flex-direction: row;
-    justify-content: stretch;
     gap: 1rem;
+  }
+
+  .project-img-container {
+    flex: 2;
+  }
+
+  .project-info-container {
+    flex: 3;
+  }
+
+  .overlay-img-text {
+    font-size: 1.4rem;
   }
 }

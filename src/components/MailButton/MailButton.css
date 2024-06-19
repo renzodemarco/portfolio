@@ -12,6 +12,7 @@
 
 .copy-button-container::after {
   content: 'Click to copy';
+  font-size: .8rem;
   position: absolute;
   transform: translate(150%, -80%);
   background: rgba(0, 0, 0, 0.4);
