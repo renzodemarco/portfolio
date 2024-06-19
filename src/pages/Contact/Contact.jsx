@@ -15,7 +15,7 @@ const Contact = () => {
           <MailButton />
         </div>
         <div className='contact-social'>
-          <h4>and find me on LinkedIn and GitHub:</h4>
+          <h4>or find me on LinkedIn and GitHub:</h4>
           <div className='contact-btn-container'>
             <ButtonLink name='linkedin' link='https://linkedin.com/in/renzo-demarco' />
             <ButtonLink name='github' link='https://github.com/renzodemarco' />

@@ -66,3 +66,9 @@
   cursor: pointer;
   transition: .2s ease;
 }
+
+@media (min-width: 1400px) {
+  .home-container {
+    grid-template-columns: 57% 43%;
+  }
+}

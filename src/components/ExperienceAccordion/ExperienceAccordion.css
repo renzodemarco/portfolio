@@ -1,13 +1,16 @@
 .accordion-header {
-  padding: 1rem;
+  padding: 1.1rem;
   cursor: pointer;
   background-color: transparent;
   color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.2rem;
   background-color: #0a0f1b;
+}
+
+.accordion-header p {
+  font-size: 1.2rem;
 }
 
 .accordion-header:hover {
