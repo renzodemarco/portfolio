@@ -16,3 +16,12 @@ main {
   flex-direction: column;
   gap: 4rem;
 } 
+
+@media (max-width: 978px) {
+  .layout {
+    overflow: hidden;
+    display: grid;
+    grid: "navbar body";
+    grid-template-columns: 20% 80%;
+  }
+}

@@ -1,7 +1,14 @@
 .projects-container {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
   gap: 1rem;
   padding-top: 2.5rem;
+}
+
+@media (max-width: 978px) {
+  .projects-container {
+    flex-direction: column;
+  }
 }

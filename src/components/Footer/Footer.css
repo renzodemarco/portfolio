@@ -11,4 +11,9 @@ footer {
 
 footer p {
   font-size: .8rem;
+  font-weight: 200;
+}
+
+footer p:last-child {
+  opacity: .8;
 }

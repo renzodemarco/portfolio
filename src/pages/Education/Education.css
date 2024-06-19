@@ -1,11 +1,12 @@
 .education-container {
+  width: 100%;
   color: #fff;
   display: grid;
   grid:
     "coder courses"
     "vet lang";
-  grid-template-columns: 50% 50%;
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   padding-top: 2rem;
 }
 

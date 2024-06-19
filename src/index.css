@@ -60,6 +60,12 @@ h4 {
   color: #fff
 }
 
+@media (max-width: 1078px) {
+  * {
+    font-size: 15px;
+  }
+}
+
 @media (min-width: 1400px) {
   * {
     font-size: 17px;

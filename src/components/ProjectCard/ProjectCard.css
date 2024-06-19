@@ -78,12 +78,12 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: .8rem;
 }
 
 .project-description {
-  font-size: .85rem;
+  font-size: .9rem;
   font-weight: 200;
   padding: .5rem 0;
   opacity: .9;
@@ -96,4 +96,12 @@
 
 .project-technologies span {
   font-weight: 700;
+}
+
+@media (max-width: 978px) {
+  .project-card {
+    flex-direction: row;
+    justify-content: stretch;
+    gap: 1rem;
+  }
 }

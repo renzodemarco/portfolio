@@ -3,9 +3,9 @@
   height: 100vh;
   width: 20vw;
   flex-direction: column;
-  grid-area: navbar;
   position: fixed;
   background-color: #1d2a47;
+  z-index: 924;
 }
 
 .navbar-profile-img {
@@ -14,4 +14,10 @@
   height: 16rem;
   object-fit: cover;
   aspect-ratio: 1;
+}
+
+@media (max-width: 978px) {
+  .navbar-container {
+    width: 195px;
+  }
 }

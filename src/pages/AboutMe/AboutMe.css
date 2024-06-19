@@ -6,7 +6,7 @@
   "presentation presentation"
   "intro skills";
   grid-template-rows: 5rem 1fr;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 3fr 2fr;
   gap: 1rem;
   padding-top: 1rem;
 }
@@ -28,7 +28,7 @@
 }
 
 .about-me-container h4 {
-  margin-bottom: .6rem;
+  margin-bottom: .8rem;
 }
 
 .intro p {
