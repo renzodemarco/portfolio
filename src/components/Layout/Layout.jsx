@@ -16,7 +16,7 @@ function Layout({ children, toggleIsHome }) {
     <div className='layout'>
       <NavbarContainer toggleIsHome={toggleIsHome} onSetActive={handleSetActive} />
       <div className='body'>
-        <Header title={activeSection} />
+        <Header title={activeSection} toggleIsHome={toggleIsHome} onSetActive={handleSetActive} />
         <main id='scroll-container'>
           {children}
         </main>

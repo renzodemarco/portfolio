@@ -9,6 +9,11 @@ const Home = ({ toggleIsHome }) => {
       <div className='home-welcome'>
         <h1>Welcome to my portfolio!</h1>
         <h2>I'm <span>Renzo</span>, Full Stack Developer</h2>
+        <div className='img-wrapper'>
+          <div className='home-img-responsive img-container'>
+            <img src={img} alt='Renzo Demarco' />
+          </div>
+        </div>
         <button onClick={toggleIsHome} className='home-button'>Let's start working together</button>
         <HomeContact />
       </div>

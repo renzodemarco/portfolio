@@ -1,0 +1,9 @@
+.responsive-navbar {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .responsive-navbar {
+    display: flex;
+  }
+}
