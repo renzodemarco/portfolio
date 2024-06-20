@@ -19,10 +19,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
 }
 
-:root {
-  --navbar-height: 9.5rem;
-}
-
 p {
   color: #fff;
   font-size: 1rem;
@@ -120,6 +116,13 @@ h4 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
+  body {
+    min-height: 100vh;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
 }
 

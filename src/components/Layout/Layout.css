@@ -28,3 +28,9 @@ main {
     grid-template-columns: 170px 1fr;
   }
 }
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

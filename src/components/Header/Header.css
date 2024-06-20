@@ -30,3 +30,9 @@ header::after {
     width: calc(100vw - 170px);
   }
 }
+
+@media (max-width: 720px) {
+  header {
+    width: 100%;
+  }
+}

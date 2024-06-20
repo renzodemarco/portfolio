@@ -66,3 +66,13 @@
   cursor: pointer;
   transition: .2s ease;
 }
+
+@media (max-width: 720px) {
+  .home-container {
+    grid:
+      "welcome"
+      "img";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
