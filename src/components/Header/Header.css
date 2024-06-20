@@ -18,3 +18,15 @@ header::after {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 978px) {
+  header {
+    width: calc(100vw - 195px);
+  }
+}
+
+@media (max-width: 830px) {
+  header {
+    width: calc(100vw - 170px);
+  }
+}

@@ -116,3 +116,13 @@
     font-size: 1.4rem;
   }
 }
+
+@media (max-width: 783px) {
+  .project-img-container {
+    flex: 4;
+  }
+
+  .project-info-container {
+    flex: 5;
+  }
+}

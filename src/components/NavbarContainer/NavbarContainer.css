@@ -21,3 +21,9 @@
     width: 195px;
   }
 }
+
+@media (max-width: 830px) {
+  .navbar-container {
+    width: 170px;
+  }
+}

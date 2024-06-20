@@ -113,3 +113,13 @@ h4 {
     font-size: 14px;
   }
 }
+
+@media (max-width: 830px) {
+  * {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
