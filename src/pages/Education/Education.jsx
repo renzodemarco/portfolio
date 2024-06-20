@@ -3,8 +3,9 @@ import './Education.css'
 const Education = () => {
   return (
     <div className='education-container'>
+      <h2>Explore my education and training:</h2>
       <div className="education-div education-coder">
-        <h2>Coderhouse</h2>
+        <h3>Coderhouse</h3>
         <ul>
           <li>Web Development: HTML, CSS, Javascript, React.js</li>
           <li>Backend programming: Node.js, Express.js</li>
@@ -13,7 +14,7 @@ const Education = () => {
         </ul>
       </div>
       <div className="education-div education-courses">
-        <h2>Other courses</h2>
+        <h3>Other courses</h3>
         <ul>
           <li>MySQL and Sequelize</li>
           <li>Git</li>
@@ -22,14 +23,14 @@ const Education = () => {
         </ul>
       </div>
       <div className="education-div education-vet">
-        <h2>Veterinary Medicine</h2>
+        <h3>Veterinary Medicine</h3>
         <ul>
           <li>In 2020, I received my degree in Veterinary Medicine with a focus on clinical practice and laboratory research, teaching, and investigation</li>
           <li>Developed strong problem-solving skills, attention to detail, and team leadership</li>
         </ul>
       </div>
       <div className="education-div education-lang">
-        <h2>Languages</h2>
+        <h3>Languages</h3>
         <ul>
           <li><span>Spanish</span> (native)</li>
           <li><span>English</span> (fluent)

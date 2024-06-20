@@ -3,11 +3,20 @@
   color: #fff;
   display: grid;
   grid:
+    "h2 h2"
     "coder courses"
     "vet lang";
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
+}
+
+.education-container h2 {
+  grid-area: h2;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  font-weight: 500;
 }
 
 .education-div {
@@ -15,7 +24,7 @@
   background-color: rgba(255, 255, 255, 0.06);
 }
 
-.education-div h2 {
+.education-div h3 {
   font-size: 1.5rem;
   font-weight: 500;
 }
@@ -30,8 +39,8 @@
 }
 
 .education-div li {
-  font-size: .95rem;
-  opacity: .9;
+  font-size: 0.95rem;
+  opacity: 0.9;
   list-style-type: disc;
 }
 
@@ -50,13 +59,13 @@
 }
 
 .education-div li p {
-  padding-top: .3rem;
-  font-size: .75rem;
-  opacity: .6;
+  padding-top: 0.3rem;
+  font-size: 0.75rem;
+  opacity: 0.6;
 }
 
 .education-div:hover {
   transform: scale(1.02);
   background-color: rgba(255, 255, 255, 0.075);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
