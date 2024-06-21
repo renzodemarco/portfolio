@@ -9,6 +9,15 @@ footer {
   padding: 1.6rem;
 }
 
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 1.6rem;
+}
+
 footer p {
   font-size: .8rem;
   font-weight: 200;
@@ -18,3 +27,35 @@ footer p:last-child {
   opacity: .8;
 }
 
+footer h2 {
+  font-size: 1.3rem;
+  padding-bottom: .3rem;
+  margin-bottom: 1.3rem;
+  border-bottom: 1px solid #fff;
+}
+
+.footer-nav {
+  display: none;
+}
+
+@media (max-width: 720px) {
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list.footer {
+    gap: 1rem;
+    padding: .4rem 0 1rem;
+  }
+
+  .nav-list.footer::before {
+    content: none;
+  }
+
+  .nav-list.footer::after {
+    content: none;
+  }
+}

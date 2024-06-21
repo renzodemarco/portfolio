@@ -16,11 +16,11 @@ function Layout({ children, toggleIsHome }) {
     <div className='layout'>
       <NavbarContainer toggleIsHome={toggleIsHome} onSetActive={handleSetActive} />
       <div className='body'>
-        <Header title={activeSection} toggleIsHome={toggleIsHome} onSetActive={handleSetActive} />
+        <Header title={activeSection} />
         <main id='scroll-container'>
           {children}
         </main>
-        <Footer />
+        <Footer toggleIsHome={toggleIsHome} onSetActive={handleSetActive} />
       </div>
     </div>
   )
