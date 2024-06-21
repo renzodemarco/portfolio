@@ -75,3 +75,19 @@
     justify-content: space-evenly;
   }
 }
+
+@media (max-width: 480px) {
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-container {
+    text-align: center;
+  }
+
+  .skills-list {
+    text-align: center;
+    align-items: center;
+  }
+}

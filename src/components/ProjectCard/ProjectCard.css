@@ -127,6 +127,18 @@
   }
 }
 
+@media (max-width: 720px) {
+  .project-card:hover .overlay-link-container {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover .project-image {
+    filter: brightness(.8);
+    transition: filter 0.3s ease;
+  }
+}
+
 @media (max-width: 576px) {
 
   .project-card {
