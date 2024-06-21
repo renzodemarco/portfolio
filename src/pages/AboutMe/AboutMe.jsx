@@ -2,7 +2,7 @@ import './AboutMe.css'
 
 const AboutMe = () => {
   return (
-    <div className='about-me-container'>
+    <>
       <div className="presentation-container">
         <h2>I'm <span>Renzo Demarco</span>, </h2>
         <h3> your next Full Stack Developer</h3>
@@ -40,7 +40,7 @@ const AboutMe = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </>
   )
 }
 

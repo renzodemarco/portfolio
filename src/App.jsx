@@ -20,11 +20,11 @@ function App() {
     <>
       {isHome == true ? <Home toggleIsHome={toggleIsHome} /> :
         <Layout toggleIsHome={toggleIsHome} >
-          <Element name="AboutMe"><AboutMe /></Element>
-          <Element name="Education"><Education /></Element>
-          <Element name="WorkExperience"><WorkExperience /></Element>
-          <Element name="Projects"><Projects /></Element>
-          <Element name="Contact"><Contact /></Element>
+          <Element name="AboutMe" className="about-me-container"><AboutMe /></Element>
+          <Element name="Education" className="education-container"><Education /></Element>
+          <Element name="WorkExperience" className="work-experience-container"><WorkExperience /></Element>
+          <Element name="Projects" className="projects-container"><Projects /></Element>
+          <Element name="Contact" className="contact-container"><Contact /></Element>
         </Layout>}
     </>
   )

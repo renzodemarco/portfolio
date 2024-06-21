@@ -17,7 +17,7 @@ const WorkExperience = () => {
   };
 
   return (
-    <div className='work-experience-container'>
+    <>
       <h2>Tap to explore my achievements and roles:</h2>
       <div className='accordion-container'>
         {Object.entries(experiences).map(([category, jobs], index) => (
@@ -37,7 +37,7 @@ const WorkExperience = () => {
           <DownloadCv/>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

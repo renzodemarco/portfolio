@@ -4,9 +4,9 @@ import './Projects.css'
 
 const Projects = () => {
   return (
-    <div className='projects-container'>
+    <>
       {projects.map((data, index) => <ProjectCard data={data} key={index} />)}
-    </div>
+    </>
   )
 }
 

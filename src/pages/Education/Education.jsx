@@ -2,7 +2,7 @@ import './Education.css'
 
 const Education = () => {
   return (
-    <div className='education-container'>
+    <>
       <h2>Explore my education and training:</h2>
       <div className="education-div education-coder">
         <h3>Coderhouse</h3>
@@ -38,7 +38,7 @@ const Education = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </>
   )
 }
 
