@@ -55,3 +55,9 @@ ul li {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, .8);
   transition: .2s ease;
 }
+
+@media (max-width: 830px) {
+  .navbar {
+    padding: 2.5rem 1rem;
+  }
+}

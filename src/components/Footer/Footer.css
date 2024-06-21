@@ -29,6 +29,7 @@ footer p:last-child {
 
 footer h2 {
   font-size: 1.3rem;
+  font-weight: 300;
   padding-bottom: .3rem;
   margin-bottom: 1.3rem;
   border-bottom: 1px solid #fff;
