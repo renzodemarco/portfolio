@@ -8,6 +8,7 @@
 
 body {
   background-color: #0f172a;
+  max-width: 100vw;
 }
 
 body::-webkit-scrollbar {
@@ -36,7 +37,7 @@ h2 {
   font-size: 2rem;
   color: #fff;
   font-weight: 400;
-  white-space: pre;
+  white-space: normal;
 }
 
 h2 span {

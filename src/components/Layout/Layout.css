@@ -34,3 +34,9 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 576px) {
+  main {
+    padding-top: 7rem;
+  }
+}

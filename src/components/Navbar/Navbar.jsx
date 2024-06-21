@@ -17,7 +17,7 @@ const Navbar = ({ navItems, toggleIsHome, onSetActive }) => {
             <Link
               to={item.name}
               spy={true}
-              offset={-160}
+              offset={ item.name === 'AboutMe' ? -140 : -120 }
               smooth={true}
               duration={500}
               activeClass="active"
