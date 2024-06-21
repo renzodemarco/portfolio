@@ -161,18 +161,16 @@
   }
 
   .overlay-text-container h3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .overlay-link {
     padding: .8rem 1.2rem;
   }
+}
 
-  .overlay-link p {
-    font-size: 1.6rem;
-  }
-
-  .overlay-link svg {
-    font-size: 1.6rem;
+@media (max-width: 480px) {
+  .overlay-text-container h3 {
+    font-size: 1.8rem;
   }
 }
