@@ -76,6 +76,16 @@
   }
 }
 
+@media (max-width: 830px) {
+  .skills-title {
+    font-size: .8rem;
+  }
+
+  .skills {
+    font-size: .9rem;
+  }
+}
+
 @media (max-width: 480px) {
   .about-me-container {
     display: flex;
