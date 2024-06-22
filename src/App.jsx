@@ -6,7 +6,7 @@ import WorkExperience from './pages/WorkExperience/WorkExperience'
 import Projects from './pages/Projects/Projects'
 import Contact from './pages/Contact/Contact'
 import { Element } from 'react-scroll';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
 
@@ -15,6 +15,10 @@ function App() {
   const toggleIsHome = () => {
     setIsHome(!isHome)
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [isHome]);
 
   return (
     <>
