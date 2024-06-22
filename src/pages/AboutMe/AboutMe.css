@@ -78,11 +78,11 @@
 
 @media (max-width: 830px) {
   .skills-title {
-    font-size: .8rem;
+    font-size: .85rem;
   }
 
   .skills {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 }
 
