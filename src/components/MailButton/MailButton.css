@@ -38,6 +38,12 @@
   opacity: 1;
 }
 
+.copy-button-container.copied::after {
+  content: 'Copied!';
+  transform: translate(210%, -80%);
+  opacity: 1;
+}
+
 .copy-icon {
   color: #fff;
   font-size: 1.1rem;
