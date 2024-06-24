@@ -1,20 +1,25 @@
 import './Home.css'
 import img from '../../assets/profile.webp'
 import HomeContact from '../../components/HomeContact/HomeContact'
+import LanguageButton from '../../components/LanguageButton/LanguageButton'
+import { useTranslation } from 'react-i18next'
 
 const Home = ({ toggleIsHome }) => {
 
+  const { t } = useTranslation();
+
   return (
     <div className="home-container">
+      <LanguageButton />
       <div className='home-welcome'>
-        <h1>Welcome to my portfolio!</h1>
-        <h2>I'm <span>Renzo</span>, Full Stack Developer</h2>
+        <h1>{t("welcome.h1")}</h1>
+        <h2>{t("welcome.h2")}<span> Renzo</span>{t("welcome.h2role")}</h2>
         <div className='img-wrapper'>
           <div className='home-img-responsive img-container'>
             <img src={img} alt='Renzo Demarco' />
           </div>
         </div>
-        <button onClick={toggleIsHome} className='home-button'>Let's start working together</button>
+        <button onClick={toggleIsHome} className='home-button'>{t("welcome.button")}</button>
         <HomeContact />
       </div>
       <div className='home-img img-container'>

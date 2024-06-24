@@ -1,7 +1,10 @@
 import './DownloadCv.css'
 import { FiDownload } from "react-icons/fi";
+import { useTranslation } from 'react-i18next'
 
 const DownloadCv = () => {
+
+  const { t } = useTranslation()
 
   const handleDownload = () => {
     const link = document.createElement('a');
@@ -12,7 +15,7 @@ const DownloadCv = () => {
 
   return (
     <button onClick={handleDownload} className='cv-button'>
-      <p>Download CV</p>
+      <p>{t("downloadCv")}</p>
       <FiDownload className='cv-icon' />
     </button>
   );

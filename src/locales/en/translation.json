@@ -1,0 +1,10 @@
+{
+  "welcome": {
+    "h1": "Welcome to my portfolio!",
+    "h2": "I'm",
+    "h2role": ", Full Stack Developer",
+    "button": "Let's start working together",
+    "contact": "Contact me:"
+  },
+  "downloadCv": "Download my CV"
+}

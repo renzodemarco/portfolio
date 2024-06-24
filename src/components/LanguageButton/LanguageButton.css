@@ -1,0 +1,24 @@
+.lang-btn-container {
+  position: fixed;
+  bottom: .6rem;
+  left: .6rem;
+  z-index: 99;
+}
+
+.lang-btn {
+  padding: .5rem 1rem;
+  background-color: #0f172a;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: .02rem;
+}
+
+.lang-btn:hover {
+  font-weight: 600;
+  transition: .3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
