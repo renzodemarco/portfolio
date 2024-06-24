@@ -1,40 +1,44 @@
+import { useTranslation } from 'react-i18next'
 import './Education.css'
 
 const Education = () => {
+
+  const { t } = useTranslation();
+
   return (
     <>
-      <h2>Explore my education and training:</h2>
+      <h2>{t("education.title")}</h2>
       <div className="education-div education-coder">
-        <h3>Coderhouse</h3>
+        <h3>{t("education.coder")}</h3>
         <ul>
-          <li>Web Development: HTML, CSS, Javascript, React.js</li>
-          <li>Backend programming: Node.js, Express.js</li>
-          <li>Mobile Application Development: React Native</li>
-          <li>NoSQL Database Management</li>
+          <li>{t("education.coderItem1")}</li>
+          <li>{t("education.coderItem2")}</li>
+          <li>{t("education.coderItem3")}</li>
+          <li>{t("education.coderItem4")}</li>
         </ul>
       </div>
       <div className="education-div education-courses">
-        <h3>Other courses</h3>
+        <h3>{t("education.courses")}</h3>
         <ul>
-          <li>MySQL and Sequelize</li>
-          <li>Git</li>
-          <li>Docker</li>
-          <li>Agile Methodologies</li>
+          <li>{t("education.coursesItem1")}</li>
+          <li>{t("education.coursesItem2")}</li>
+          <li>{t("education.coursesItem3")}</li>
+          <li>{t("education.coursesItem4")}</li>
         </ul>
       </div>
       <div className="education-div education-vet">
-        <h3>Veterinary Medicine</h3>
+        <h3>{t("education.vet")}</h3>
         <ul>
-          <li>In 2020, I received my degree in Veterinary Medicine with a focus on clinical practice and laboratory research, teaching, and investigation</li>
-          <li>Developed strong problem-solving skills, attention to detail, and team leadership</li>
+          <li>{t("education.vetItem1")}</li>
+          <li>{t("education.vetItem2")}</li>
         </ul>
       </div>
       <div className="education-div education-lang">
-        <h3>Languages</h3>
+        <h3>{t("education.lang")}</h3>
         <ul>
-          <li><span>Spanish</span> (native)</li>
-          <li><span>English</span> (fluent)
-            <p>IELTS Advanced English Certificate (2023)</p>
+          <li><span>{t("education.langES")}</span> ({t("education.langESLevel")})</li>
+          <li><span>{t("education.langEN")}</span> ({t("education.langENLevel")})
+            <p>IELTS Advanced English Certificate (C1)</p>
           </li>
         </ul>
       </div>

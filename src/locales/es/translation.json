@@ -4,12 +4,12 @@
     "h2": "Soy",
     "h2role": ", Desarrollador Full Stack",
     "button": "Empecemos a trabajar juntos",
-    "contact": "Contáctame:"
+    "contact": "Contactame:"
   },
   "downloadCV": "Descarga mi CV",
   "aboutMe": {
     "role": "tu próximo Desarrollador Full Stack",
-    "intro": "Conóceme:",
+    "intro": "Conoceme:",
     "introPart1": "Soy un desarrollador entusiasta, dedicado a la excelencia y la innovación en cada proyecto que emprendo.",
     "introPart2": "Mi diversa experiencia en medicina veterinaria, trabajo de laboratorio, enseñanza e investigación me brinda una perspectiva única para crear soluciones innovadoras. Esto me permite abordar problemas de manera creativa y ofrecer resultados sobresalientes.",
     "introPart3": "Mi experiencia en la gestión de equipos y la colaboración interdisciplinaria me permite liderar de manera efectiva y sobresalir en entornos de equipo.",
@@ -19,5 +19,30 @@
     "skillsTitle3": "Base de datos",
     "skillsTitle4": "Mobile",
     "skillsTitle5": "Herramientas y Metodologías"
+  },
+  "education": {
+    "title": "Explora mi educación y formación:",
+    "coder": "Coderhouse",
+    "coderItem1": "Desarrollo Web: HTML, CSS, Javascript, React.js",
+    "coderItem2": "Programación Backend: Node.js, Express.js",
+    "coderItem3": "Desarrollo de Aplicaciones Móviles: React Native",
+    "coderItem4": "Gestión de Bases de Datos NoSQL",
+    "courses": "Cursos",
+    "coursesItem1": "MySQL y Sequelize",
+    "coursesItem2": "Git",
+    "coursesItem3": "Docker",
+    "coursesItem4": "Metodologías Ágiles",
+    "vet": "Medicina Veterinaria",
+    "vetItem1": "En 2020, recibí mi título de grado en Medicina Veterinaria con enfoque en práctica clínica e investigación de laboratorio, enseñanza e investigación",
+    "vetItem2": "Desarrollé habilidades sólidas para la resolución de problemas, atención al detalle y liderazgo de equipos",
+    "lang": "Idiomas",
+    "langES": "Español",
+    "langESLevel": "nativo",
+    "langEN": "Inglés",
+    "langENLevel": "fluido"
+  },
+  "experience": {
+    "title": "Presiona para explorar mis logros y roles:",
+    "CV": "También puedes echarle un vistazo a mi CV:"
   }
 }

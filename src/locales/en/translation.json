@@ -19,5 +19,30 @@
     "skillsTitle3": "Database",
     "skillsTitle4": "Mobile",
     "skillsTitle5": "Tools and Methodologies"
+  },
+  "education": {
+    "title": "Explore my education and training:",
+    "coder": "Coderhouse",
+    "coderItem1": "Web Development: HTML, CSS, Javascript, React.js",
+    "coderItem2": "Backend programming: Node.js, Express.js",
+    "coderItem3": "Mobile Application Development: React Native",
+    "coderItem4": "NoSQL Database Management",
+    "courses": "Courses",
+    "coursesItem1": "MySQL and Sequelize",
+    "coursesItem2": "Git",
+    "coursesItem3": "Docker",
+    "coursesItem4": "Agile Methodologies",
+    "vet": "VeterinaryMedicine",
+    "vetItem1": "In 2020, I received my degree in Veterinary Medicine with a focus on clinical practice and laboratory research, teaching, and investigation",
+    "vetItem2": "Developed strong problem-solving skills, attention to detail, and team leadership",
+    "lang": "Langugaes",
+    "langES": "Spanish",
+    "langESLevel": "native",
+    "langEN": "English",
+    "langENLevel": "fluent"
+  },
+  "experience": {
+    "title": "Tap to explore my achievements and roles:",
+    "CV": "You can also take a look at my CV:"
   }
 }

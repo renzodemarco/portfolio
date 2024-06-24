@@ -1,8 +1,8 @@
-import './Home.css'
 import img from '../../assets/profile.webp'
 import HomeContact from '../../components/HomeContact/HomeContact'
 import LanguageButton from '../../components/LanguageButton/LanguageButton'
 import { useTranslation } from 'react-i18next'
+import './Home.css'
 
 const Home = ({ toggleIsHome }) => {
 
