@@ -6,5 +6,18 @@
     "button": "Let's start working together",
     "contact": "Contact me:"
   },
-  "downloadCv": "Download my CV"
+  "downloadCV": "Download my CV",
+  "aboutMe": {
+    "role": "your next Full Stack Developer",
+    "intro": "Get to know me:",
+    "introPart1": "I'm an enthusiastic developer dedicated to excellence and innovation in every project I undertake.",
+    "introPart2": "My diverse background in veterinary medicine, lab work, teaching, and research gives me a unique perspective to create innovative solutions. This enables me to tackle problems creatively and deliver standout results.",
+    "introPart3": "My experience in team management and interdisciplinary collaboration allows me to lead effectively and excel in team environments.",
+    "skills": "My Skills",
+    "skillsTitle1": "Frontend",
+    "skillsTitle2": "Backend",
+    "skillsTitle3": "Database",
+    "skillsTitle4": "Mobile",
+    "skillsTitle5": "Tools and Methodologies"
+  }
 }

@@ -1,15 +1,21 @@
-import { navItems } from '../../data/data.js'
+import { navItems as navItemsEN } from '../../data/data.en.js';
+import { navItems as navItemsES } from '../../data/data.es.js';
+import i18n from '../../i18n.js'
 import { Link } from 'react-scroll'
 import './Footer.css'
 
 const Footer = ({ toggleIsHome, onSetActive }) => {
+
+  const current = i18n.language
+  const navItems = current === 'en' ? navItemsEN : navItemsES;
+
   return (
     <footer>
       <nav className='footer-nav'>
         <h2 className='footer-title'>Navigation:</h2>
         <ul className='nav-list footer'>
           <li className='nav-item footer' onClick={toggleIsHome}>
-            WELCOME!
+            {current === 'en' ? 'WELCOME!' : '¡BIEVENIDO!'}
           </li>
           {navItems.map((item, index) => (
             <li

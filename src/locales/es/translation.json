@@ -6,6 +6,18 @@
     "button": "Empecemos a trabajar juntos",
     "contact": "Contáctame:"
   },
-  "downloadCv": "Descarga mi CV"
-
+  "downloadCV": "Descarga mi CV",
+  "aboutMe": {
+    "role": "tu próximo Desarrollador Full Stack",
+    "intro": "Conóceme:",
+    "introPart1": "Soy un desarrollador entusiasta, dedicado a la excelencia y la innovación en cada proyecto que emprendo.",
+    "introPart2": "Mi diversa experiencia en medicina veterinaria, trabajo de laboratorio, enseñanza e investigación me brinda una perspectiva única para crear soluciones innovadoras. Esto me permite abordar problemas de manera creativa y ofrecer resultados sobresalientes.",
+    "introPart3": "Mi experiencia en la gestión de equipos y la colaboración interdisciplinaria me permite liderar de manera efectiva y sobresalir en entornos de equipo.",
+    "skills": "Mis habilidades",
+    "skillsTitle1": "Frontend",
+    "skillsTitle2": "Backend",
+    "skillsTitle3": "Base de datos",
+    "skillsTitle4": "Mobile",
+    "skillsTitle5": "Herramientas y Metodologías"
+  }
 }

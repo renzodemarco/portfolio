@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import ExperienceAccordion from '../../components/ExperienceAccordion/ExperienceAccordion'
 import DownloadCv from '../../components/DownloadCv/DownloadCv'
-import { experiences } from '../../data/data'
+import { experiences as experiencesEN } from '../../data/data.en.js';
+import { experiences as experiencesES } from '../../data/data.es.js';
+import i18n from '../../i18n.js'
 import './WorkExperience.css'
 
 const WorkExperience = () => {
 
   const [expandedIndex, setExpandedIndex] = useState(null);
+  const current = i18n.language
+  const experiences = current === 'en' ? experiencesEN : experiencesES;
 
   const toggleItem = (index) => {
     if (expandedIndex === index) {

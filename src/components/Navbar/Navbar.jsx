@@ -1,13 +1,16 @@
 import { Link } from 'react-scroll';
+import i18n from '../../i18n';
 import './Navbar.css'
 
 const Navbar = ({ navItems, toggleIsHome, onSetActive }) => {
+
+  const current = i18n.language
 
   return (
     <nav className='navbar'>
       <ul className='nav-list'>
         <li className='nav-item' onClick={toggleIsHome}>
-          WELCOME!
+          {current === 'en' ? 'WELCOME!' : '¡BIEVENIDO!'}
         </li>
         {navItems.map((item, index) => (
           <li
@@ -17,7 +20,7 @@ const Navbar = ({ navItems, toggleIsHome, onSetActive }) => {
             <Link
               to={item.name}
               spy={true}
-              offset={ item.name === 'AboutMe' ? -140 : -120 }
+              offset={item.name === 'AboutMe' ? -140 : -120}
               smooth={true}
               duration={500}
               activeClass="active"

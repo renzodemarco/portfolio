@@ -1,42 +1,46 @@
 import './AboutMe.css'
+import { useTranslation } from 'react-i18next'
 
 const AboutMe = () => {
+
+  const { t } = useTranslation()
+
   return (
     <>
       <div className="presentation-container">
-        <h2>I'm <span>Renzo Demarco</span>, </h2>
-        <h3> your next Full Stack Developer</h3>
+        <h2>{t("welcome.h2")}<span> Renzo Demarco</span>, </h2>
+        <h3> {t("aboutMe.role")}</h3>
       </div>
       <div className='intro-container'>
         <div className='intro'>
-          <h4>Get to know me</h4>
-          <p>I'm a passionate developer dedicated to excellence and innovation in every project I undertake.</p>
-          <p>My diverse background in veterinary medicine, lab work, teaching, and research gives me a unique perspective to create innovative solutions. This enables me to tackle problems creatively and deliver standout results.</p>
-          <p>My experience in team management and interdisciplinary collaboration allows me to lead effectively and excel in team environments.</p>
+          <h4>{t("aboutMe.intro")}</h4>
+          <p>{t("aboutMe.introPart1")}</p>
+          <p>{t("aboutMe.introPart2")}</p>
+          <p>{t("aboutMe.introPart3")}</p>
         </div>
       </div>
       <div className='skills-container'>
-        <h4>My skills</h4>
+        <h4>{t("aboutMe.skills")}</h4>
         <ul className='skills-list'>
           <li>
-            <p className='skills-title'>Frontend</p>
+            <p className='skills-title'>{t("aboutMe.skillsTitle1")}</p>
             <p className='skills'>React.js | Javascript | HTML | CSS | Bootstrap | Tailwind</p>
           </li>
           <li>
-            <p className='skills-title'>Backend</p>
+            <p className='skills-title'>{t("aboutMe.skillsTitle2")}</p>
             <p className='skills'>Node.js | Express.js</p>
           </li>
           <li>
-            <p className='skills-title'>Databases</p>
+            <p className='skills-title'>{t("aboutMe.skillsTitle3")}</p>
             <p className='skills'>MySQL (Sequelize) | MongoDB (Mongoose)</p>
           </li>
           <li>
-            <p className='skills-title'>Mobile</p>
+            <p className='skills-title'>{t("aboutMe.skillsTitle4")}</p>
             <p className='skills'>React Native</p>
           </li>
           <li>
-            <p className='skills-title'>Tools and Methodologies</p>
-            <p className='skills'>Git | Agile | Scrum</p>
+            <p className='skills-title'>{t("aboutMe.skillsTitle5")}</p>
+            <p className='skills'>Git | Agile | SOLID</p>
           </li>
         </ul>
       </div>

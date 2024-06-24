@@ -15,7 +15,7 @@ const DownloadCv = () => {
 
   return (
     <button onClick={handleDownload} className='cv-button'>
-      <p>{t("downloadCv")}</p>
+      <p>{t("downloadCV")}</p>
       <FiDownload className='cv-icon' />
     </button>
   );
