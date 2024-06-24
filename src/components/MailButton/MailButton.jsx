@@ -9,7 +9,7 @@ const MailButton = () => {
 
   const copyMail = () => {
     setIsCopied(true)
-    setTimeout(() => setIsCopied(false), 2000)
+    setTimeout(() => setIsCopied(false), 3000)
   }
 
   return (
