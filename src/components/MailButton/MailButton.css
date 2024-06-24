@@ -7,18 +7,18 @@
 .copy-button-container:hover {
   cursor: pointer;
   font-weight: 500;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .copy-button-container::after {
-  content: 'Click to copy';
-  font-size: .8rem;
+  content: "Click to copy";
+  font-size: 0.8rem;
   position: absolute;
   transform: translate(150%, -80%);
   background: rgba(0, 0, 0, 0.4);
   color: rgba(255, 255, 255, 0.8);
-  padding: .4rem .7rem;
-  border-radius: .4rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.4rem;
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -29,7 +29,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: .4rem;
+  gap: 0.4rem;
   width: 100%;
   height: 100%;
 }
@@ -39,12 +39,22 @@
 }
 
 .copy-button-container.copied::after {
-  content: 'Copied!';
+  content: "Copied!";
   transform: translate(210%, -80%);
-  opacity: 1;
 }
 
 .copy-icon {
   color: #fff;
   font-size: 1.1rem;
+}
+
+@media (max-width: 576px) {
+  .copy-button-container::after {
+    font-size: .7rem;
+    transform: translate(162%, -80%);
+  }
+
+  .copy-button-container.copied::after {
+    transform: translate(230%, -80%);
+  }
 }
