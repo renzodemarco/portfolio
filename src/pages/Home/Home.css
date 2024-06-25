@@ -74,7 +74,11 @@
 @media (max-width: 720px) {
   .home-container {
     grid:"welcome";
-    padding: 2rem 0 4rem;
+    padding-top: 2rem;
+  }
+
+  .home-welcome {
+    padding-bottom: 2rem;
   }
 
   .home-img {

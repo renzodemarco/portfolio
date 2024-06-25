@@ -22,3 +22,9 @@
   transition: .3s ease;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
+
+@media (max-width: 720px) {
+  .lang-btn-container {
+    position: relative;
+  }
+}
