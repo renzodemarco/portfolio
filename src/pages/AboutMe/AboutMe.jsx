@@ -8,7 +8,7 @@ const AboutMe = () => {
   return (
     <>
       <div className="presentation-container">
-        <h2>{t("welcome.h2")}<span> Renzo Demarco</span>, </h2>
+        <h2>{t("welcome.h2")}<span> Renzo Demarco</span>,</h2>
         <h3> {t("aboutMe.role")}</h3>
       </div>
       <div className='intro-container'>

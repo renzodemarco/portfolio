@@ -1,21 +1,25 @@
 import ButtonLink from '../../components/ButtonLink/ButtonLink'
 import MailButton from '../../components/MailButton/MailButton'
+import { useTranslation } from 'react-i18next'
 import './Contact.css'
 
 const Contact = () => {
+
+  const { t } = useTranslation()
+
   return (
     <>
       <div className='contact-msg'>
-        <h3>Feel free to reach out for collaboration opportunities</h3>
-        <h2>Let's create something wonderful!</h2>
+        <h3>{t("contact.h3")}</h3>
+        <h2>{t("contact.h2")}</h2>
       </div>
       <div className='contact-list'>
         <div className='contact-mail'>
-          <h4>You can reach me through my mail:</h4>
+          <h4>{t("contact.mail")}</h4>
           <MailButton />
         </div>
         <div className='contact-social'>
-          <h4>or find me on LinkedIn and GitHub:</h4>
+          <h4>{t("contact.social")}</h4>
           <div className='contact-btn-container'>
             <ButtonLink name='linkedin' link='https://linkedin.com/in/renzo-demarco' />
             <ButtonLink name='github' link='https://github.com/renzodemarco' />

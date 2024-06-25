@@ -20,6 +20,10 @@
   padding-bottom: 1.6rem;
 }
 
+.presentation-container h2, .presentation-container h3 {
+  white-space: pre;
+}
+
 .intro-container {
   grid-area: intro;
   display: flex;

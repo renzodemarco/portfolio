@@ -44,5 +44,20 @@
   "experience": {
     "title": "Presiona para explorar mis logros y roles:",
     "CV": "También puedes echarle un vistazo a mi CV:"
+  },
+  "projects": {
+    "webButton": "Visitar sitio",
+    "technologies": "Tecnologías: "
+  },
+  "contact": {
+    "h3": "Estoy disponible para colaborar, no dudes en contactarme",
+    "h2": "¡Creemos algo extraordinario juntos!",
+    "mail": "Puedes escribirme a través de mi correo:",
+    "social": "o encontrarme en LinkedIn y GitHub:"
+  },
+  "footer": {
+    "nav": "Navegación:",
+    "createdBy": "Página web creada por Renzo Demarco",
+    "rights": "Todos los derechos reservados"
   }
 }

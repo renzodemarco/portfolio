@@ -35,7 +35,7 @@
     "vet": "VeterinaryMedicine",
     "vetItem1": "In 2020, I received my degree in Veterinary Medicine with a focus on clinical practice and laboratory research, teaching, and investigation",
     "vetItem2": "Developed strong problem-solving skills, attention to detail, and team leadership",
-    "lang": "Langugaes",
+    "lang": "Languages",
     "langES": "Spanish",
     "langESLevel": "native",
     "langEN": "English",
@@ -44,5 +44,20 @@
   "experience": {
     "title": "Tap to explore my achievements and roles:",
     "CV": "You can also take a look at my CV:"
+  },
+  "projects": {
+    "webButton": "Visit website",
+    "technologies": "Technologies used: "
+  },
+  "contact": {
+    "h3": "Feel free to reach out for collaboration opportunities",
+    "h2": "Let's create something wonderful!",
+    "mail": "You can reach me through my mail:",
+    "social": "or find me on LinkedIn and GitHub:"
+  },
+  "footer": {
+    "nav": "Navigation:",
+    "createdBy": "Webpage created by Renzo Demarco",
+    "rights": "All rights reserved"
   }
 }
