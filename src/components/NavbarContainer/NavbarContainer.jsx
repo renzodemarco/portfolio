@@ -1,14 +1,12 @@
 import './NavbarContainer.css'
 import img from '../../assets/profile.webp'
 import Navbar from '../Navbar/Navbar'
-import { navItems as navItemsEN } from '../../data/data.en.js';
-import { navItems as navItemsES } from '../../data/data.es.js';
-import i18n from '../../i18n.js'
+import { useTranslation } from 'react-i18next'
 
 const NavbarContainer = ({ toggleIsHome, onSetActive }) => {
 
-  const current = i18n.language
-  const navItems = current === 'en' ? navItemsEN : navItemsES;
+  const { t } = useTranslation()
+  const navItems = t('navItems', { returnObjects: true });
 
   return (
     <div className='navbar-container'>
