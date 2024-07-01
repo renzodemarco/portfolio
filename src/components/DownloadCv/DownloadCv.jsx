@@ -8,7 +8,7 @@ const DownloadCv = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = import.meta.env.BASE_URL + 'renzo-demarco-cv.pdf';
+    link.href = import.meta.env.BASE_URL + t("CV_URL");
     link.download = 'Renzo Demarco - CV.pdf';
     link.click();
   };
