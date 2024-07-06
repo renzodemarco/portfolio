@@ -10,7 +10,7 @@ const Navbar = ({ navItems, toggleIsHome, onSetActive }) => {
     <nav className='navbar'>
       <ul className='nav-list'>
         <li className='nav-item' onClick={toggleIsHome}>
-          {current === 'en' ? 'WELCOME!' : '¡BIEVENIDO!'}
+          {current === 'en' ? 'WELCOME!' : '¡BIENVENIDO!'}
         </li>
         {navItems.map((item, index) => (
           <li
