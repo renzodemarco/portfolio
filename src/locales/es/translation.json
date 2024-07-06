@@ -132,7 +132,7 @@
     "data": [
       {
         "title": "MyVetHub",
-        "description": "Esta aplicación web única simplifica la gestión de clínicas veterinarias permitiendo a los usuarios crear, modificar y eliminar registros de pacientes, incluyendo características detalladas e historial médico. Soporta la actualización fácil de historiales clínicos y ofrece filtros avanzados para búsquedas eficientes de pacientes.",
+        "description": "Esta aplicación web simplifica la gestión de clínicas veterinarias permitiendo a los usuarios crear, modificar y eliminar registros de pacientes, incluyendo características detalladas e historial médico. Soporta la actualización fácil de historiales clínicos y ofrece filtros avanzados para búsquedas eficientes de pacientes.",
         "technologies": [
           "React.js",
           "Node.js",
