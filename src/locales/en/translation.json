@@ -82,6 +82,20 @@
           ]
         },
         {
+          "company": "Igrowker",
+          "date": "June 2024 - August 2024",
+          "responsibilities": [
+            "Backend team leader.",
+            "Development of a website that allows users to find restaurants and rural gastronomic offers, make reservations, and write reviews.",
+            "Implementation and design of RESTful APIs using Node.js and Express.js.",
+            "Execution of CRUD operations in MongoDB to manage data efficiently.",
+            "Implementation of secure user authentication and authorization mechanisms using JSON Web Tokens (JWT).",
+            "Integration of Stripe for secure payment processing, handling transactions, refunds, and subscription management.",
+            "Integration of interactive maps into web applications using OpenStreetMap and Leaflet.",
+            "Collaboration with cross-functional teams, including frontend developers, designers, and project managers."
+          ]
+        },
+        {
           "company": "100devs",
           "date": "May 2023 - August 2023",
           "responsibilities": [
